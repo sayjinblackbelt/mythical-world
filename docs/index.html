@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mythical World</title>
+  <meta name="description" content="Mythical World — RPG pixel art de exploração, criaturas mitológicas, missões e descoberta.">
+  <style>
+    :root { --bg:#11181b; --panel:#182328; --accent:#ff7c24; --gold:#ffce00; --blue:#4a9ad1; --text:#f4f7f8; --muted:#b9c5c9; }
+    * { box-sizing:border-box; }
+    body { margin:0; font-family:system-ui,-apple-system,Segoe UI,sans-serif; background:linear-gradient(180deg,#11181b 0%,#17272c 100%); color:var(--text); }
+    main { max-width:1050px; margin:auto; padding:32px 20px 60px; }
+    header { min-height:430px; display:grid; place-items:center; text-align:center; }
+    .pixel { font-family:monospace; letter-spacing:.08em; text-transform:uppercase; }
+    h1 { font-size:clamp(42px,8vw,82px); margin:0 0 14px; color:var(--gold); text-shadow:5px 5px 0 #6b3c16; }
+    h2 { color:var(--accent); }
+    .tagline { font-size:clamp(18px,3vw,26px); color:var(--muted); }
+    .badge { display:inline-block; margin:18px 0; padding:8px 14px; border:1px solid var(--blue); border-radius:999px; color:var(--blue); }
+    .actions { display:flex; gap:12px; justify-content:center; flex-wrap:wrap; margin-top:22px; }
+    a.button { display:inline-block; padding:13px 20px; border-radius:8px; text-decoration:none; font-weight:700; background:var(--accent); color:#11181b; }
+    a.secondary { background:transparent; border:1px solid #5e7077; color:var(--text); }
+    section { background:rgba(24,35,40,.82); border:1px solid #30434a; border-radius:14px; padding:24px; margin:18px 0; }
+    .grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(210px,1fr)); gap:14px; }
+    .card { padding:18px; background:#202e33; border-radius:10px; }
+    .card h3 { margin-top:0; color:var(--gold); }
+    ul { line-height:1.8; color:var(--muted); }
+    footer { text-align:center; color:#819096; padding-top:28px; }
+    code { color:var(--gold); }
+  </style>
+</head>
+<body>
+<main>
+  <header>
+    <div>
+      <div class="pixel">Open World Pixel RPG</div>
+      <h1>MYTHICAL WORLD</h1>
+      <div class="tagline">Explore. Descubra. Crie vínculos. Evolua.</div>
+      <div class="badge">Protótipo em desenvolvimento · V0.4</div>
+      <div class="actions">
+        <a class="button" href="https://github.com/sayjinblackbelt/mythical-world">Ver no GitHub</a>
+        <a class="button secondary" href="./GAME_DESIGN.md">Game Design</a>
+        <a class="button secondary" href="./ROADMAP.md">Roadmap</a>
+      </div>
+    </div>
+  </header>
+
+  <section>
+    <h2>O projeto</h2>
+    <p>Mythical World é um RPG 2D em pixel art focado em exploração, criaturas mitológicas, missões e descoberta. O desenvolvimento acontece de forma incremental, com prototipagem no Base44 e documentação/versionamento no GitHub.</p>
+  </section>
+
+  <section>
+    <h2>Experiência</h2>
+    <div class="grid">
+      <div class="card"><h3>🗺️ Exploração</h3><p>Um pequeno mundo contínuo com floresta, lago, vila e ruínas.</p></div>
+      <div class="card"><h3>🐾 Criaturas</h3><p>Encontre criaturas, crie vínculos e desenvolva sua equipe.</p></div>
+      <div class="card"><h3>📜 Missões</h3><p>Descubra histórias e objetivos sem transformar a aventura em um GPS.</p></div>
+      <div class="card"><h3>⚔️ Combate</h3><p>Encontros simples em tempo real, mantendo a exploração como foco.</p></div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Estado atual</h2>
+    <ul>
+      <li>Mapa top-down e movimentação</li>
+      <li>Colisões e câmera</li>
+      <li>Lumíria como primeira companheira</li>
+      <li>Criaturas selvagens e combate básico</li>
+      <li>XP, níveis e grupo de até três criaturas</li>
+      <li>Descobertas e salvamento local</li>
+      <li>Vila, NPCs, diálogos e missões</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Documentação</h2>
+    <div class="actions">
+      <a class="button secondary" href="GAMEPLAY.md">Gameplay</a>
+      <a class="button secondary" href="CREATURES.md">Bestiário</a>
+      <a class="button secondary" href="MISSIONS.md">Missões</a>
+      <a class="button secondary" href="CHANGELOG.md">Changelog</a>
+    </div>
+  </section>
+
+  <footer>
+    Mythical World · Projeto experimental · <code>V0.4</code>
+  </footer>
+</main>
+</body>
+</html>
